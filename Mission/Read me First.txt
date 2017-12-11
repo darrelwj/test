@@ -1,0 +1,5 @@
+For now most of the things is pre-set
+
+first create password. run create.php first
+token is echo out. 
+Token will be emailed to the person next time.
