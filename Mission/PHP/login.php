@@ -27,7 +27,7 @@ if(isset($_POST["submit"])){
 		
 		$plus = $pass.$mtoken;
 		
-		if (password_verify($plus, $hash)) {
+		if (password_verify($plus, $hash)) { //time can be set in future with css
 			$dateout = $pass1["Dateout"];
 			date_default_timezone_set('Asia/Kuala_Lumpur');
 			$timenow = date("Y-m-d H:i");

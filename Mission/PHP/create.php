@@ -23,7 +23,8 @@ $dt = DateTime::createFromFormat('Y-m-d H:i', $time);
 $dt->add(new DateInterval('PT30M'));
 $dtout = $dt->format('Y-m-d H:i');
 
-$sqlupdate = "UPDATE user SET Password = '".$hash."', Dateout = '".$dtout."' WHERE User_ID = '".$id."'";
+$iid ="2";//can be dynamic, for now preset
+$sqlupdate = "UPDATE user SET Password = '".$hash."', Dateout = '".$dtout."' WHERE User_ID = '".$iid."'";
 $connection->query($sqlupdate);
 
 echo $randtoken;
